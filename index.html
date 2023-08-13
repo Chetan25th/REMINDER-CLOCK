@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminder-Clock-App</title>
+    <link rel="icon" type="image/x-icon" href="./download.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="MainContainer">
+ 
+      <div class="LeftContainer">
+        <div class="Firstpart">
+            <img src="./clock_logo.png" alt="Image-Not-Found"class="Clock_Logo"/>
+        </div>
+
+        <div class="Secondpart">
+            <div class="Reminder_Container">
+                <div class="Reminder_Rows">
+                  <img src="./wake_up.svg" alt="Image-Not-Found"  class="Reminder_Icon"/>
+
+                  <p class="Reminder_Name">Set Wake Up Time</p>
+                  <select  id="WAKETIME">
+                    <option value="0">12 AM - 01 AM</option>
+                    <option value="1">01 AM - 02 AM</option>
+                    <option value="2">02 AM - 03 AM</option>
+                    <option value="3">03 AM - 04 AM</option>
+                    <option value="4">04 AM - 05 AM</option>
+                    <option value="5">05 AM - 06 AM</option>
+                    <option value="6">06 AM - 07 AM</option>
+                    <option value="7">07 AM - 08 AM</option>
+                    <option value="8">08 AM - 09 AM</option>
+                    <option value="9">09 AM - 10 AM</option>
+                    <option value="10" selected>10 AM - 11 AM</option>
+                    <option value="11">11 AM - 12 PM</option>
+                    <option value="12">12 PM - 01 PM</option>
+                    <option value="13">01 PM - 02 PM</option>
+                    <option value="14">02 PM - 03 PM</option>
+                    <option value="15">03 PM - 04 PM</option>
+                    <option value="16">04 PM - 05 PM</option>
+                    <option value="17">05 PM - 06 PM</option>
+                    <option value="18">06 PM - 07 PM</option>
+                    <option value="19">07 PM - 08 PM</option>
+                    <option value="20">08 PM - 09 PM</option>
+                    <option value="21">09 PM - 10 PM</option>
+                    <option value="22">10 PM - 11 PM</option>
+                    <option value="23">11 PM - 12 AM</option>
+                  </select>
+                </div>
+      
+                <p class="Rows"></p>
+      
+                <div class="Reminder_Rows r">
+                  <img src="./lunch_time.svg"  alt="Image-Not-Found" class="Reminder_Icon" />
+          
+                    <p class="Reminder_Name">Set lunch time</p>
+                    <select  id="LUNCHTIME">
+                    <option value="0">12 AM - 01 AM</option>
+                    <option value="1">01 AM - 02 AM</option>
+                    <option value="2">02 AM - 03 AM</option>
+                    <option value="3">03 AM - 04 AM</option>
+                    <option value="4">04 AM - 05 AM</option>
+                    <option value="5">05 AM - 06 AM</option>
+                    <option value="6">06 AM - 07 AM</option>
+                    <option value="7">07 AM - 08 AM</option>
+                    <option value="8">08 AM - 09 AM</option>
+                    <option value="9">09 AM - 10 AM</option>
+                    <option value="10">10 AM - 11 AM</option>
+                    <option value="11">11 AM - 12 PM</option>
+                    <option value="12" selected>12 PM - 01 PM</option>
+                    <option value="13">01 PM - 02 PM</option>
+                    <option value="14">02 PM - 03 PM</option>
+                    <option value="15">03 PM - 04 PM</option>
+                    <option value="16">04 PM - 05 PM</option>
+                    <option value="17">05 PM - 06 PM</option>
+                    <option value="18">06 PM - 07 PM</option>
+                    <option value="19">07 PM - 08 PM</option>
+                    <option value="20">08 PM - 09 PM</option>
+                    <option value="21">09 PM - 10 PM</option>
+                    <option value="22">10 PM - 11 PM</option>
+                    <option value="23">11 PM - 12 AM</option>
+                  </select>
+                </div>
+      
+                <p class="Rows"></p>
+      
+                <div class="Reminder_Rows">
+                  <img  src="./nap_time.svg" alt="Image-Not-Found" class="Reminder_Icon" />
+            
+                   <p class="Reminder_Name">Set nap time</p>
+                   <select  id="NAPTIME">
+                    <option value="0">12 AM - 01 AM</option>
+                    <option value="1">01 AM - 02 AM</option>
+                    <option value="2">02 AM - 03 AM</option>
+                    <option value="3">03 AM - 04 AM</option>
+                    <option value="4">04 AM - 05 AM</option>
+                    <option value="5">05 AM - 06 AM</option>
+                    <option value="6">06 AM - 07 AM</option>
+                    <option value="7">07 AM - 08 AM</option>
+                    <option value="8">08 AM - 09 AM</option>
+                    <option value="9">09 AM - 10 AM</option>
+                    <option value="10">10 AM - 11 AM</option>
+                    <option value="11">11 AM - 12 PM</option>
+                    <option value="12">12 PM - 01 PM</option>
+                    <option value="13">01 PM - 02 PM</option>
+                    <option value="14">02 PM - 03 PM</option>
+                    <option value="15">03 PM - 04 PM</option>
+                    <option value="16"selected>04 PM - 05 PM</option>
+                    <option value="17">05 PM - 06 PM</option>
+                    <option value="18">06 PM - 07 PM</option>
+                    <option value="19">07 PM - 08 PM</option>
+                    <option value="20">08 PM - 09 PM</option>
+                    <option value="21">09 PM - 10 PM</option>
+                    <option value="22">10 PM - 11 PM</option>
+                    <option value="23">11 PM - 12 AM</option>
+                  </select>
+                </div>
+      
+                <p class="Rows"></p>
+      
+                <div class="Reminder_Rows">
+                  <img src="./icons8-moon-64 (1).png" alt="Image-Not-Found" class="Reminder_Icon" />
+                  
+                  <p class="Reminder_Name">Set night time</p>
+                  <select  id="NIGHTIME">
+                    <option value="0">12 AM - 01 AM</option>
+                    <option value="1">01 AM - 02 AM</option>
+                    <option value="2">02 AM - 03 AM</option>
+                    <option value="3">03 AM - 04 AM</option>
+                    <option value="4">04 AM - 05 AM</option>
+                    <option value="5">05 AM - 06 AM</option>
+                    <option value="6">06 AM - 07 AM</option>
+                    <option value="7">07 AM - 08 AM</option>
+                    <option value="8">08 AM - 09 AM</option>
+                    <option value="9">09 AM - 10 AM</option>
+                    <option value="10">10 AM - 11 AM</option>
+                    <option value="11">11 AM - 12 PM</option>
+                    <option value="12">12 PM - 01 PM</option>
+                    <option value="13">01 PM - 02 PM</option>
+                    <option value="14">02 PM - 03 PM</option>
+                    <option value="15">03 PM - 04 PM</option>
+                    <option value="16">04 PM - 05 PM</option>
+                    <option value="17">05 PM - 06 PM</option>
+                    <option value="18">06 PM - 07 PM</option>
+                    <option value="19">07 PM - 08 PM</option>
+                    <option value="20">08 PM - 09 PM</option>
+                    <option value="21"selected>09 PM - 10 PM</option>
+                    <option value="22">10 PM - 11 PM</option>
+                    <option value="23">11 PM - 12 AM</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+
+      
+        <div class="Thirdpart">
+            <div class="Message_Box">
+                <span id="ChangeMessage">Good Morning !!</span>
+              </div>
+        </div>
+
+      <div class="Fourthpart">
+       <button id="Alarm_Btn">Set Alarm</button>
+
+      </div>
+
+       <div class="Fifthpart">
+        <div class="Time_Box Flex_Box">
+            <p>Wake Up Time:10 AM - 11 AM <span class="Timing"></span></p>
+            <p>Lunch Time:12 PM - 01 PM <span class="Timing"></span></p>
+            <p>Nap Time:04 PM - 05 PM<span class="Timing"></span></p>
+            <p>Night Time:08 PM - 09 PM<span class="Timing"></span></p>
+          </div>
+       </div>
+      </div>
+
+       <div class="RightContainer">
+        <div class="firstpart">
+          <div class="Clock_Container">
+        <div class="blur_1"></div>
+
+        <div class="blur_1 blur_2"></div>
+
+        <div class="Main_Clock">
+          <span class="text">Time</span>
+
+          <div class="Time_Box">
+            <span id="Hour">10</span>
+            <span>hour</span>
+          </div>
+
+          <span style="color: #8a11bf; font-size: 30px">:</span>
+
+          <div class="Time_Box">
+            <span id="Minute">00</span>
+            <span>mins</span>
+          </div>
+
+          <span style="color: #8a11bf; font-size: 30px">:</span>
+
+          <div class="Time_Box">
+            <span id="Second">01</span>
+            <span>secs</span>
+          </div>
+
+          <span></span>
+
+          <div class="Time_Box Meridiem_Box">
+            <span id="Meridiem">AM</span>
+          </div>
+
+        </div> 
+      </div>
+   </div>
+
+
+     <div class="secondpart">
+        <div class="Message_Box Message_Box2">
+            <span id="ChangeMessage2">GRAB SOME HEALTHY BREAKFAST!!!</span>
+          </div>
+     </div>
+
+
+       <div class="thirdpart">
+        <img
+        src="./Component 30 – 1.svg" alt="Image-Not-Found"  id="Reminder_Post" />
+
+       </div> 
+      </div>
+     
+    </div>
+
+  </body>
+</html>
