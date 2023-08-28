@@ -127,7 +127,7 @@ select:focus {
 }
 
 #Alarm_Btn {
-    background: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    background: linear-gradient(115deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
     border: none;
     color: white;
     font-weight: bold;
@@ -253,7 +253,7 @@ select:focus {
 }
 
 #Hour,#Minute,#Second,
-#Meridiem {
+#AMPM {
     font-size: 22px;
     font-weight: bold;
 
@@ -263,7 +263,7 @@ select:focus {
     background-image: url(./AM_svg.svg);
 }
 
-#Meridiem {
+#AMPM {
     color: white;
     font-size: 20px;
 }
@@ -388,7 +388,7 @@ select:focus {
     }
 
     #Hour,#Minute,#Second,
-    #Meridiem {
+    #AMPM {
         font-size: 15px;
     }
 
@@ -423,7 +423,7 @@ select:focus {
         margin: 0px 10px;
     }
     #Hour,#Minute,#Second,
-    #Meridiem {
+    #AMPM {
         font-size: 20px;
     }
     .Message_Box {
