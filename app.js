@@ -1,6 +1,6 @@
-function clock() {
-    // new key word--new key method is created while we are declaring the several objects or while declaring one king of constructor
-    let date = new Date(); //this is predefind method and date object represent the  date and time , it provides the method that work with date and time ,it contains hours,minuts,seconds,AM,PM all methods are given below
+function Clock() {
+    
+    let date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
@@ -9,9 +9,8 @@ function clock() {
       hours = hours - 12;
     }
   
-    // console.log(hours, minutes, seconds);
-  
-    //assigning real time value to html elements
+   
+    
     let hrs = document.getElementById("Hour");
     hrs.innerHTML = hours;
     let mins = document.getElementById("Minute");
@@ -23,8 +22,8 @@ function clock() {
     clock();
   }, 1000);
   
-  function rest() {
-    let date = new Date(); //this is predefind method and date object represent the  date and time , it provides the method that work with date and time ,it contains hours,minuts,seconds,AM,PM all methods are given below
+  function Rest() {
+    let date = new Date(); 
     let hours = date.getHours();
   
     if (hours >= 12) {
@@ -65,7 +64,7 @@ function clock() {
       let NIGHTIME = document.getElementById("NIGHTIME");
   
       if (parseInt(WAKETIME.value) === hours) {
-        // console.log(wakeUp.key.value);
+       
         document.getElementById("ChangeMessage2").innerHTML =
           "GRAB SOME HEALTHY BREAKFAST!!!";
         document.getElementById("Reminder_Post").src = "./WakeUptime.svg"; 
