@@ -1,4 +1,4 @@
-function Clock() {
+function clock() {
     
     let date = new Date();
     let hours = date.getHours();
@@ -22,7 +22,7 @@ function Clock() {
     clock();
   }, 1000);
   
-  function Rest() {
+  function rest() {
     let date = new Date(); 
     let hours = date.getHours();
   
