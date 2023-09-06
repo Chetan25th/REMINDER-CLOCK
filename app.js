@@ -8,17 +8,16 @@ function clock() {
     if (hours > 12) {
       hours = hours - 12;
     }
-  
-   
-    
+
     let hrs = document.getElementById("Hour");
     hrs.innerHTML = hours;
     let mins = document.getElementById("Minute");
     mins.innerHTML = minutes;
     let secs = document.getElementById("Second");
-    secs.innerHTML = seconds;
+    secs.innerHTML = seconds; 
   }
-  setInterval(() => {
+
+  setInterval(() => {  
     clock();
   }, 1000);
   
@@ -33,18 +32,18 @@ function clock() {
       let ampm = document.getElementById("AMPM");
       ampm.innerHTML = "AM";
     }
-  
+
     let greeting = document.getElementById("ChangeMessage");
   
     if (hours >= 12 && hours < 16) {
-      greeting.innerHTML = "GOOD AFTERNOON!!";
+      greeting.innerText = "GOOD AFTERNOON!!";
     }
     if (hours >= 16 && hours < 17) {
-      greeting.innerHTML = "GOOD EVENING!!";
+      greeting.innerText = "GOOD EVENING!!";
     }
-    if (hours >= 17 && hours < 22) {
-      greeting.innerHTML = "GOOD NIGHT!!";
-    }
+    if (hours >= 17 && hours < 23) {
+      greeting.innerText = "GOOD NIGHT!!";
+    } 
   
     let button = document.getElementById("Alarm_Btn");
     button.addEventListener("mouseover", function () {

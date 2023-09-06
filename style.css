@@ -107,7 +107,7 @@ select:focus {
     width: 34px;
 }
 
-.Message_Box {
+.Box {
     display: flex;
      align-items: center;
     background-color: rgba(255, 255, 255, 0.234);
@@ -207,7 +207,7 @@ select:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    opacity: 0.71;
+    opacity: 0.70;
     z-index: 2;
 }
 
@@ -268,7 +268,7 @@ select:focus {
     font-size: 20px;
 }
 
-.Message_Box2 {
+.Box2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -359,7 +359,7 @@ select:focus {
         padding: 15px;
     }
 
-    .Message_Box {
+    .Box {
         font-size: 16px;
         padding: 0px 5px;
     }
@@ -392,7 +392,7 @@ select:focus {
         font-size: 15px;
     }
 
-    .Message_Box2 {
+    .Box2 {
         padding: 0px 5px;
     }
 
@@ -426,12 +426,12 @@ select:focus {
     #AMPM {
         font-size: 20px;
     }
-    .Message_Box {
+    .Box {
         font-size: 20px;
         padding: 0px 10px;
     }
 
-    .Message_Box2 {
+    .Box2 {
         padding: 0px 10px;
     }
 
